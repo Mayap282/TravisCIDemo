@@ -1,0 +1,19 @@
+language: java
+jdk_switcher:
+  - ibmjava8
+  
+before_script:
+   - sudo apt-get install ant-optional
+
+script: ant build
+
+deploy:
+  provider: bluemixcloudfoundry
+  skip_cleanup: true
+  manifest: manifest.yml
+  username: maya.aitpune@gmail.com
+  password: Voilin@282
+  organization: maya.aitpune@gmail.com
+  space: dev
+  on:
+    branch: master
