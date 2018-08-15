@@ -7,4 +7,4 @@ script: ant build
 deploy:
   provider: heroku
   api_key: e1760e84-36ed-4342-a432-4c5d8bdaeaf1
-  app: TravisCIDemo
+  app: travis-ci-demo
