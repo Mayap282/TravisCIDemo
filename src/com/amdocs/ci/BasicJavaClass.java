@@ -1,10 +1,10 @@
 /**
  * 
  */
-package com.ibm.ci;
+package com.amdocs.ci;
 
 /**
- * @author Prabhat
+ * @author Maya Pilania
  *
  */
 public class BasicJavaClass {

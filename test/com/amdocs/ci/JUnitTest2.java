@@ -1,8 +1,8 @@
-package com.ibm.ci;
+package com.amdocs.ci;
 
 import junit.framework.TestCase;
 
-public class JUnitTest1 extends TestCase{
+public class JUnitTest2 extends TestCase{
 
 	public void testSampleTest1() {
 		assertEquals(1, 1);

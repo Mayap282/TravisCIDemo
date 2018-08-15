@@ -1,19 +1,11 @@
 language: java
 jdk_switcher:
-  - ibmjava8
-  
+- ibmjava8
 before_script:
-   - sudo apt-get install ant-optional
-
+- sudo apt-get install ant-optional
 script: ant build
-
 deploy:
-  provider: bluemixcloudfoundry
-  skip_cleanup: true
-  manifest: manifest.yml
-  username: maya.aitpune@gmail.com
-  password: Voilin@282
-  organization: maya.aitpune@gmail.com
-  space: dev
-  on:
-    branch: master
+  provider: heroku
+  api_key:
+    secure: CTgS0aE3j3v9UUVcewsFo65wRt42mhDfjHwsBhb2e7kLVX+C/Px6hqNHtYKYByJIGwUpv2D1U63nxbYl06xoDr11vImayfYQhWIRQygMrnXAZQoIPAeWeLQH/l9HknnJmNy0LVPKuSmcqBrRiZgtoZFUDMTLow2H8J03Po2yzaYoShYryaLEB4dMzySHB6tngpiBmszmDH9gbQDa2O5a8lm2d/P9E703XDPt7cGxsnZFgwB2YDWDpsnNHqsr8kJ7TicIHoGIkKV0FLxzozMecvswa1/ERrYZDx9HXAeh/ur6BhLWKIMEG7VaJOW5B4cMJJSjr7hYSDZh17+RiRV61KN6hF7ftlCGJc6HFdhnwb5fKMjHfowPIDRrZcCs8BXdMqtVfKkaUnnzPjwE99TfoC23qdqKd6g7ba5l7CGnr2Yj/PkXUDJSaSpGlqDVsKLAqeR6gqk4ZJwmUm4JWQmDwIalHSdK9JwwmzHrwElvg95wT4zEKTY8Z3ohu7O/mVrUk3Qzs5kjtzmON2k5uoTt+UiJG6KrFeXSjluY3IHqrFbH8mecj5JdzwEAJJTYjXAXe25qpbs/di3XWr/rB2zSKyaZbnyFKaWM16GIHzRg/PNnn4BUUTstD5WjwHOoy7/5/U3IiQ1yHd9YgbifRii74nte1nrHXEybfkwF8msaeuY=
+  app: TravisCIDemo

@@ -1,4 +1,4 @@
-package com.ibm.ci;
+package com.amdocs.ci;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
