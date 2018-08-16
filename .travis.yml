@@ -8,7 +8,7 @@ deploy:
   provider: bluemixcloudfoundry
   skip_cleanup: true
   manifest: manifest.yml
-  username: maya.aitpune@gmail.com
+  username: $USER
   password: $PASSWORD
   organization: Amdocs_Org
   space: dev
