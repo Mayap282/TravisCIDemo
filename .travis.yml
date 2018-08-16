@@ -5,6 +5,13 @@ before_script:
 - sudo apt-get install ant-optional
 script: ant build
 deploy:
-  provider: heroku
-  api_key: e1760e84-36ed-4342-a432-4c5d8bdaeaf1
-  app: travis-ci-demo
+  provider: bluemixcloudfoundry
+  skip_cleanup: true
+  manifest: manifest.yml
+  username: maya.aitpune@gmail.com
+  password: $PASSWORD
+  organization: Amdocs_Org
+  space: dev
+  api: https://api.eu-gb.bluemix.net
+  on:
+    branch: master

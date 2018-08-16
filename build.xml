@@ -24,7 +24,7 @@
     	<delete dir="${ARCHIVE_DIR}/test-output" />
     	<delete dir="dist"/>
     </target>
-    <target name="build" depends="build-project, test"/>
+    <target name="build" depends="build-project, test, build-war"/>
     <target name="cleanall" depends="clean"/>
     <target name="build-project" depends="clean,init">
         <echo message="${ant.project.name}: ${ant.file}"/>
@@ -48,4 +48,13 @@
 		     </batchtest>
 		  </junit>
 	</target>
+   <target name="build-war" depends="test">
+	  <war destfile="${ARCHIVE_DIR}/target/${warname}" webxml="WebContent/WEB-INF/web.xml">
+	  	<classes dir="bin"/>
+	  	<fileset dir="WebContent">
+	  		<include name="**/*"/>
+	  		<exclude name="**/*.class"/>
+	  	</fileset>
+	  </war>
+   </target>
 </project>

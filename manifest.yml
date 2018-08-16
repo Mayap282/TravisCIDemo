@@ -2,9 +2,7 @@ applications:
  - name: TravisCIDemo
    buildpack: liberty-for-java
    host: traviscidemo
-   domain: mybluemix.net
+   domain: eu-gb.mybluemix.net
    path: target/TravisCIDemo.war
    memory: 256M
    instances: 1
-   services:
-   - TravisDemoCloudant
