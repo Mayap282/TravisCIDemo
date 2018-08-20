@@ -15,6 +15,3 @@ deploy:
   api: https://api.eu-gb.bluemix.net
   on:
     branch: master
-notifications:
-  email:
-    - mayapi@amdocs.com
