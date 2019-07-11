@@ -10,7 +10,7 @@ deploy:
   manifest: manifest.yml
   username: $USER
   password: $PASSWORD
-  organization: Amdocs_Org
+  organization: Maya_Org
   space: dev
   api: https://api.eu-gb.bluemix.net
   on:
