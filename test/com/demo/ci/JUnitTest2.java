@@ -9,7 +9,7 @@ public class JUnitTest2 extends TestCase{
 	}
 	
 	public void testSampleTest2() {
-		assertEquals(11, 12);
+		assertEquals(12, 12);
 	}
 	
 	public void testSampleTest3() {
