@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.amdocs.ci;
+package com.demo.com;
 
 /**
  * @author Maya Pilania
